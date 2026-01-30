@@ -1,0 +1,104 @@
+body {
+  width: clamp(1100px, 100%, 1600px);
+  margin: 0 auto;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.header {
+  background-color: #ffffff;
+  background-image: url(../images/background_header.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: clamp(720px, 100vh, 800px);
+}
+
+.header__logo {
+  position: relative;
+  top: 30px;
+  left: 30px;
+  width: 105px;
+  height: 39px;
+}
+
+.header__nav {
+  position: absolute;
+  top: 30px;
+  right: 26px;
+}
+
+.header__nav-links {
+  display: flex;
+  column-gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+}
+
+.header__nav-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.header__title {
+  margin: 0px;
+  position: absolute;
+  top: 243px;
+  left: 80px;
+  max-width: 709px;
+}
+
+span {
+  display: block;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: -1px;
+}
+
+.header__title--accent {
+  font-family: "Noto-Serif", "Times New Roman", serif;
+  font-style: italic;
+  color: #ff976b;
+}
+
+.header__description {
+  margin: 0px;
+  position: absolute;
+  top: 415px;
+  left: 80px;
+  max-width: 683px;
+  font-family: "Noto-Serif", "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.header__image {
+  width: 646px;
+  height: 568px;
+  position: absolute;
+  top: 124px;
+  right: 5px;
+}
+
+.header__info {
+  color: #6f6f6f;
+}
+
+.header__info-text {
+  margin: 0px;
+}
+
+.header__hours {
+  position: absolute;
+  bottom: 40px;
+  left: 80px;
+}
+
+.header__address {
+  position: absolute;
+  bottom: 40px;
+  right: 80px;
+}
