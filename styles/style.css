@@ -24,13 +24,13 @@ body {
   height: 39px;
 }
 
-.header__nav {
+.nav {
   position: absolute;
   top: 30px;
   right: 26px;
 }
 
-.header__nav-links {
+.nav__links {
   display: flex;
   column-gap: 20px;
   list-style: none;
@@ -38,12 +38,12 @@ body {
   padding: 0px;
 }
 
-.header__nav-link {
+.nav__link {
   text-decoration: none;
   color: #000000;
 }
 
-.header__nav-link:hover {
+.nav__link:hover {
   color: #ff976b;
   transition: color 0.3s ease;
 }
