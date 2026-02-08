@@ -60,46 +60,87 @@
       </div>
     </header>
     <main class="content">
-      <section class="reservation" id="reservation"></section>
-      <h2 class="reservation__title">Reservar una mesa</h2>
-      <form class="reservation__form">
-        <label class="form__label" for="name">Nombre*</label>
-        <input
-          type="text"
-          class="form__input"
-          id="name"
-          placeholder="Nombre"
-          required
-        />
-        <label class="form__label" for="number-clients"
-          >Número de comensales*</label
-        >
-        <input
-          type="number"
-          class="form__input"
-          id="number-clients"
-          min="1"
-          max="8"
-          placeholder="1-8"
-          required
-        />
-        <label class="form__label" for="date">Fecha y hora*</label>
-        <input type="date" class="form__input" id="date" required />
-        <label class="form__label" for="email">Tu correo electrónico*</label>
-        <input
-          type="email"
-          class="form__input"
-          id="email"
-          placeholder="email@email.com"
-          required
-        />
-        <button type="submit" class="form__button">Reservar una mesa</button>
-        <label class="form__label" for="terms"
-          ><input type="checkbox" id="terms" class="form__input" />Acepto los
-          términos de uso</label
-        >
-      </form>
+      <section class="reservation" id="reservation">
+        <h2 class="reservation__title">Reservar una mesa</h2>
+        <form class="reservation__form" action="#" method="post">
+          <fieldset class="reservation__fieldset">
+            <label class="form__label" for="name">Nombre*</label>
+            <input
+              type="text"
+              class="form__input"
+              id="name"
+              placeholder="Nombre"
+              required
+            />
+            <label class="form__label" for="number-clients"
+              >Número de comensales*</label
+            >
+            <input
+              type="number"
+              class="form__input"
+              id="number-clients"
+              min="1"
+              max="8"
+              placeholder="1-8"
+              required
+            />
+            <label class="form__label" for="date">Fecha y hora*</label>
+            <input
+              type="datetime-local"
+              class="form__input"
+              id="date"
+              required
+            />
+            <label class="form__label" for="email"
+              >Tu correo electrónico*</label
+            >
+            <input
+              type="email"
+              class="form__input"
+              id="email"
+              placeholder="email@email.com"
+              required
+            />
+            <button type="submit" class="form__button">
+              Reservar una mesa
+            </button>
+            <label class="form__label--checkbox" for="terms"
+              ><input
+                type="checkbox"
+                id="terms"
+                class="form__input--checkbox"
+                required
+              />Acepto los términos de uso</label
+            >
+          </fieldset>
+        </form>
+      </section>
     </main>
-    <footer class="footer" id="contacts"></footer>
+    <footer class="footer" id="contacts">
+      <img src="./images/logo_coffeeshop_light.svg" class="footer__logo" />
+      <div class="footer__circle"></div>
+      <div class="footer__social">
+        <h3 class="footer__social-title">Redes sociales</h3>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link"
+              ><img
+                src="./images/facebook_white.svg"
+                class="footer__social-icon"
+              />Facebook</a
+            >
+          </li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link"
+              ><img
+                src="./images/instagram_white.svg"
+                class="footer__social-icon"
+              />Instagram</a
+            >
+          </li>
+        </ul>
+      </div>
+      <small class="footer__copyright">© 2026 Francisco Guadarrama</small>
+    </footer>
   </body>
 </html>
